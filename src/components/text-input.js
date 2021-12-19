@@ -8,11 +8,18 @@ function TextInput({
   phone,
   phoneCode = '+92',
   border = 1,
+  borderColor = '#707070',
   color = '#707070',
   backgroundColor = $Color.foreground,
 }) {
   return (
-    <View style={{...styles.contianer, backgroundColor, borderWidth: border}}>
+    <View
+      style={{
+        ...styles.contianer,
+        backgroundColor,
+        borderWidth: border,
+        borderColor,
+      }}>
       {phone && (
         <View style={styles.phoneContainer}>
           <Text style={styles.phoneText}>{phoneCode}</Text>
@@ -35,7 +42,6 @@ function TextInput({
 const styles = StyleSheet.create({
   contianer: {
     borderRadius: 100,
-    borderColor: '#707070',
     flexDirection: 'row',
     alignItems: 'center',
     overflow: 'hidden',

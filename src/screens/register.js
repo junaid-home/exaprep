@@ -6,6 +6,7 @@ import {
   StyleSheet,
   KeyboardAvoidingView,
   StatusBar,
+  TouchableOpacity,
 } from 'react-native';
 
 import FancyGreetingsText from '../components/fancy-greetings-text';
@@ -94,7 +95,9 @@ function RegisterScreen() {
         <React.Fragment>
           <View style={styles.bottomTextContainer}>
             <Text style={styles.bottomText}>Already Have an Account ? </Text>
-            <Text style={styles.bottomTextOrange}>Login</Text>
+            <TouchableOpacity>
+              <Text style={styles.bottomTextOrange}>Login</Text>
+            </TouchableOpacity>
           </View>
           <View style={styles.leftCircle}>
             <LeftCircle />
@@ -140,6 +143,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     marginBottom: 15,
+    marginLeft: 10,
+    paddingTop: 10,
   },
   bottomTextOrange: {
     color: $Color.secondary,
@@ -147,8 +152,8 @@ const styles = StyleSheet.create({
     fontFamily: $Typography.fonts.robotoCondensedBold,
   },
   bottomText: {
-    color: '#FFFFFF',
-    fontSize: 17,
+    color: $Color.foreground,
+    fontSize: 15,
     fontFamily: $Typography.fonts.robotoCondensedBold,
   },
 });
