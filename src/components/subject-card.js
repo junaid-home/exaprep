@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     width: '45%',
     paddingVertical: 20,
-    elevation: 0.5,
+    elevation: 3,
   },
   heading: {
     ...$Typography.mainHeading,
