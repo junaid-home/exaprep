@@ -23,6 +23,12 @@ export default StyleSheet.create({
   headingsupportText: {
     color: '#707070',
     letterSpacing: 0.5,
+    fontSize: 17,
+  },
+  smallHeading: {
     fontSize: 18,
+    letterSpacing: 1,
+    fontFamily: fonts.robotoCondensedBold,
+    color: '#333',
   },
 });

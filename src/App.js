@@ -1,5 +1,5 @@
 import * as React from 'react';
-import RegisterScreen from './screens/home';
+import RegisterScreen from './screens/subjects';
 
 function App() {
   return <RegisterScreen />;
