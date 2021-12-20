@@ -13,6 +13,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import TextInput from '../components/text-input';
 import Button from '../components/button';
+import Line from '../components/line';
 
 import {$Color, $Typography} from '../styles';
 
@@ -67,11 +68,6 @@ function AccountScreen() {
     </View>
   );
 }
-const Line = () => (
-  <View style={styles.line}>
-    <Text>&nbsp;</Text>
-  </View>
-);
 
 const styles = StyleSheet.create({
   container: {
@@ -117,7 +113,6 @@ const styles = StyleSheet.create({
   secondaryText: {
     ...$Typography.headingsupportText,
   },
-  line: {height: 1, backgroundColor: '#ddd', width: '100%', borderRadius: 10},
   infoContainer: {
     width: '100%',
     flexDirection: 'row',
