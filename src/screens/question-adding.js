@@ -9,7 +9,7 @@ import Button from '../components/button';
 
 import {$Color, $Typography} from '../styles';
 
-function AddQuestions() {
+function QuestionAddingScreen() {
   const countries = ['Egypt', 'Canada', 'Australia', 'Ireland'];
   return (
     <View style={styles.container}>
@@ -99,4 +99,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AddQuestions;
+export default QuestionAddingScreen;

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import RegisterScreen from './screens/add-question';
+import RegisterScreen from './screens/answer-correction';
 
 function App() {
   return <RegisterScreen />;
