@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 23 20">
+  <g id="Group_33" data-name="Group 33" transform="translate(-31 -230)">
+    <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(31 230)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="23" height="20" rx="3" stroke="none"/>
+      <rect x="0.5" y="0.5" width="22" height="19" rx="2.5" fill="none"/>
+    </g>
+    <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(31 233)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="23" height="17" rx="3" stroke="none"/>
+      <rect x="0.5" y="0.5" width="22" height="16" rx="2.5" fill="none"/>
+    </g>
+    <text id="A" transform="translate(38 246)" fill="#707070" font-size="14" font-family="RobotoCondensed-Bold, Roboto" font-weight="700"><tspan x="0" y="0">A</tspan></text>
+  </g>
+</svg>

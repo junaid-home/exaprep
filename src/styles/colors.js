@@ -7,4 +7,6 @@ export default {
   bluishTextInputText: '#E8D0D0',
   bluishSecondaryBackground: '#5E6AAE',
   textPrimary: '#FFFFFF',
+  rightAnswerBackground: '#B5FFAC',
+  wrongAnswerBackground: '#FCE6D3',
 };
