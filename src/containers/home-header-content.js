@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: $Color.background,
-    paddingTop: 75,
+    paddingTop: 20,
     paddingHorizontal: 8,
   },
   greetings: {

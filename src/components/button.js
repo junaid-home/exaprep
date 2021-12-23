@@ -16,9 +16,23 @@ function Button({text, type = 'rounded', fullWidth, color = 'secondary'}) {
       minWidth: '100%',
     };
 
+  if (type === 'outlined') {
+    containerStyles = {
+      ...styles.text,
+      fontSize: 14,
+      paddingHorizontal: 0,
+      borderColor: $Color.foreground,
+      borderWidth: 1,
+    };
+  }
+
   return (
     <TouchableOpacity>
-      <Text style={{...containerStyles, backgroundColor: $Color[color]}}>
+      <Text
+        style={{
+          ...containerStyles,
+          backgroundColor: type === 'outlined' ? 'transparent' : $Color[color],
+        }}>
         {text}
       </Text>
     </TouchableOpacity>

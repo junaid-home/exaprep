@@ -7,21 +7,21 @@ import SchoolIcon from '../assets/icons/school.svg';
 
 import {$Color} from '../styles';
 
-function Footer() {
+function Footer({onHomeClicked, onResultsClicked, onProfileClicked}) {
   return (
     <View style={styles.container}>
-      <TouchableOpacity>
-        <HomeIcon />
+      <TouchableOpacity onPress={onHomeClicked}>
+        <HomeIcon style={{padding: 10}} />
       </TouchableOpacity>
       <View style={styles.middleIconContainer}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={onResultsClicked}>
           <View style={styles.middleIcon}>
             <SchoolIcon />
           </View>
         </TouchableOpacity>
       </View>
-      <TouchableOpacity>
-        <PersonIcon />
+      <TouchableOpacity onPress={onProfileClicked}>
+        <PersonIcon style={{padding: 10}} />
       </TouchableOpacity>
     </View>
   );

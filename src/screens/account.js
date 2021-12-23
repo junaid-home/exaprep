@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     paddingHorizontal: 16,
-    paddingTop: 80,
+    paddingTop: 30,
     alignItems: 'center',
   },
   img: {

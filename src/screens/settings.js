@@ -13,12 +13,16 @@ import Footer from '../components/footer';
 import Line from '../components/line';
 
 import {$Color, $Typography} from '../styles';
+import {SETTINGS_SCREEN} from '../helpers/constants';
 
-function SettingsScreen() {
+function SettingsScreen({navigation}) {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor={$Color.foreground} barStyle="dark-content" />
-      <Header />
+      <Header
+        onGearClicked={() => navigation.navigate(SETTINGS_SCREEN)}
+        onMenuClicked={() => navigation.openDrawer()}
+      />
       <ScrollView contentContainerStyle={styles.statusbar}>
         <View style={styles.itemContainer}>
           <View style={styles.item}>
@@ -79,7 +83,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   statusbar: {
-    marginTop: 70,
+    marginTop: 10,
   },
   itemContainer: {
     flexDirection: 'row',

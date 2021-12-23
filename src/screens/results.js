@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
   subContainer: {
     flex: 1,
-    marginTop: 70,
+    marginTop: 10,
   },
 });
 
